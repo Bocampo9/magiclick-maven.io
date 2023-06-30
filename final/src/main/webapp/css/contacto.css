@@ -1,0 +1,490 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.menu-icon-oculto {
+display: none;
+}
+.buscar {
+display: none;
+color: #939AA9;
+text-decoration: none;
+font-size: 18px;
+}
+.menu-magiclick {
+height: 60px;
+}
+.menu-fijo {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80px;
+position: fixed;
+z-index: 999;
+width: 100%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-fijo .contenedor {
+display: flex;
+align-items: center;
+padding-top: 14px;
+}
+
+.contenedor ul {
+  display: flex;
+  justify-content: center;
+}
+.contenedor li {
+  list-style: none;
+  letter-spacing: 1px;
+  padding: 0px 10px;
+}
+#lista-uno:hover {
+top: 20px;
+background: #feb142;
+}
+.contenedor nav{
+position: relative;
+}
+#desplegable-menu{
+display: none;
+position: absolute;
+left: 153px;
+
+}
+#desplegable-menu a {
+padding: 15px 20px;
+font-size: 10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+transition: filter 0.3s ease-in-out;
+}
+#desplegable-menu a:hover {
+filter: brightness(115%);
+}
+
+#lista-uno-principal li:nth-child(3):hover #desplegable-menu {
+display: block;
+z-index: 100;
+}
+
+.contenedor a {
+  font-family: 'Raleway';
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+.menu-redes ul {
+  padding-left: 2px;
+}
+.menu-redes a {
+  color: rgb(186, 186, 186);
+  font-size: 23px;
+}
+.icono:hover {
+transform: scale(1.2);
+}
+/* Quienes somos */
+.quienes-somos {
+  position: relative;
+}
+
+.quienes-somos img {
+  width: 100%;
+  height: 600px;
+  filter: brightness(40%); /* Ajusta el valor de brightness según lo oscuro que quieras que sea el video */
+}
+
+.text-somos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Asegura que el encabezado esté por encima del video */
+}
+
+.text-somos h2 {
+  margin: auto;
+  color: #fff;
+  font-weight: 900;
+  font-size: 70px;
+}
+/* section contacto */
+
+#contacto {
+    display: flex;
+    width: 90%;
+    height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+    font-family: 'Raleway';
+    font-weight: 200;
+    color: #363636;
+    
+}
+.formulario {
+    width: 100%;
+    padding: 0 10px;
+}
+.formulario h2{
+    font-size: 32px;
+
+}
+.formulario p{
+    font-size: 18px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.form button{
+background-color: #feb142;
+height: 52px;
+border: none;
+color: #fff;
+letter-spacing: 2px;
+font-size: 15px;
+width: 150px;
+font-weight: 500;
+border-radius: 15px;
+}
+.form input, .form textarea{
+    background-color: #fff7ec;
+    border-width: 0px;
+    border-style: solid;
+    color: #363636;
+    font-family: Josefin Sans;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    outline: none;
+}
+.seguinos {
+    width: 100%;
+    padding-left: 50px;
+}
+.seguinos h2{
+    padding-bottom: 30px;
+}
+.redes-sociales {
+    padding-bottom: 20px;
+}
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.icon:hover {
+    filter: brightness(1.1);
+}
+
+.email-contacto p {
+    font-size: 20px;
+    color: #939AA9;
+    font-weight: 600;
+}
+.email-contacto a {
+    text-decoration: none;
+    color: #feb142;
+}
+
+/* section mapa */
+#mapa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #mapa h3{
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  #map {
+    height: 400px;
+    width: 90%;
+  }
+/* nav-dos */
+#nav-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:40px;
+  padding-bottom: 10px;
+}
+.contenedor-nav-dos ul{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+.contenedor-nav-dos li {
+  list-style: none;
+  padding: 15px 10px 20px 10px;
+}
+.contenedor-nav-dos .a-nav-dos{
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-size: 13px;
+}
+/* footer */
+footer {
+  background: url(imagenes/footer_news_02.png);
+  background-color: #feb142;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  background-position: center right ;
+  text-align: center;
+  padding-top: 60px;
+}
+footer h2{
+  color: #fff;
+  font-size: 46px;
+  font-family: 'Raleway';
+}
+footer p{
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Raleway';
+}
+footer input{
+  width: 48%;
+  height: 52px;
+  background-color: #fff7ec;
+  border-width: 0px;
+  border-style: solid;
+  color: #363636;
+  font-family: Josefin Sans;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: none;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+footer button{
+background-color: #fed406;
+height: 52px;
+margin-left: 20px;
+border: none;
+padding: 0 50px 0 50px;
+color: #fff;
+font-family: 'Raleway';
+letter-spacing: 2px;
+font-size: 13px;
+}
+.btn-submit:hover {
+color: #000;
+}
+.btn-footer {
+padding-bottom: 50px;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: rgb(45, 183, 66);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.whatsapp-logo {
+font-size: 35px;
+align-items: center;
+}
+
+.marca {
+  color: #ffffff;
+  background-color: #939AA9;
+  font-family: Raleway,sans-serif;
+  padding: 8px;
+
+}
+.marca h1{
+font-size: 30px;
+}
+  @media screen and (max-width: 800px){
+
+    .menu-fijo {
+      display: inline;
+      position: relative;
+      z-index: 999;
+      box-shadow:none;
+  }
+  .menu-fijo .contenedor {
+    padding-top: 0px;
+  }
+  .menu-imagen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 11px;
+  }
+  .menu-magiclick {
+    font-size: 10px;
+  }
+  .menu-icon-oculto {
+    display: block;
+    margin-top: 15px;
+    font-size: 21px;
+  }
+  .buscar {
+    display: block;
+  }
+  
+  .contenedor {
+    justify-content: start;
+    margin-left: -9px;
+    padding-top: 0px;
+  }
+  .contenedor nav {
+    position: relative;
+    width: 95%;
+  }
+  .contenedor ul {
+    flex-direction: column;
+    
+  }
+  .contenedor li {
+      padding: 0;
+      border-bottom: 1px solid #888;
+  }
+  .contenedor a {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #888;
+    line-height: 25px;
+  }
+  .contenedor li:hover a {
+    color: #feb142;
+  }
+  #lista-uno:hover {
+    background: none;
+  }
+  
+  nav {
+    display: none;
+  }
+  .menu-redes {
+    display: none;
+  }
+  .lista-desplegable:hover #desplegable-menu {
+    display: block;
+  }
+  #desplegable-menu {
+    left: 59%;
+  }
+  #desplegable-menu a {
+    padding: 2px 7px;
+    font-size: 8px;
+  }
+  
+
+/* quienes somos */
+
+.quienes-somos img {
+  width: 100%;
+  height: 250px;
+}
+.text-somos h2 {
+  text-align: center;
+  font-size: 33px;
+}
+#contacto {
+    margin-top: 37px;
+    margin-left: 17px;
+    flex-direction: column;
+}
+.seguinos {
+    margin-top: 27px;
+    padding-left: 17px;
+}
+.seguinos h2 {
+    padding-bottom: 18px;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 2px;
+    line-height: 37px;
+    font-size: 17px;
+}
+.email-contacto p {
+    font-size: 11px;
+}
+.form button {
+    height: 37px;
+    font-size: 12px;
+    width: 100px;
+}
+
+#mapa h3 {
+    font-size: 18px;
+}
+#map {
+    height: 200px;
+}
+
+#nav-dos {
+  display: none;
+  }
+footer {
+  padding-top: 15px;
+}
+footer h2 {
+  font-size: 21px;
+  font-weight: 300;
+}
+footer p {
+  font-size: 12px;
+  font-weight: 300;
+}
+.btn-footer {
+  padding-bottom: 14px;
+}
+footer button {
+  height: 31px;
+  margin-left: 0px;
+  padding: 0 45px 0 45px;
+}
+footer input {
+  width: 66%;
+  height: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.marca h1 {
+  font-size: 12px;
+  padding-top: 5px;
+}
+}
